@@ -1,0 +1,33 @@
+{
+  "name": "swagger-express-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npm run start-gendoc && ts-node --esm src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-gendoc": "ts-node --esm src/swagger.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.20",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "postgresql": "^0.0.1",
+    "reflect-metadata": "^0.1.13",
+    "swagger-autogen": "^2.23.6",
+    "swagger-ui-express": "^5.0.0",
+    "typeorm": "^0.3.17",
+    "typescript-json-schema": "^0.62.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/swagger-ui-express": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
